@@ -1,0 +1,55 @@
+---
+import Jobs from '../components/Jobs.vue'
+import Me from '../components/Me.vue'
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Astro</title>
+    <style is:global>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+      body {
+        @apply max-w-screen-lg mx-auto p-8;
+      }
+
+      h1 {
+        font-family: 'Abril Fatface', serif;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      h2 {
+        font-family: 'Lexend', sans-serif;
+        font-optical-sizing: auto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+      }
+
+      a,
+      span {
+        font-family: 'Red Hat Mono', monospace;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='grid lg:grid-cols-2'>
+      <Me client:load />
+      <Jobs client:load />
+    </div>
+  </body>
+</html>
