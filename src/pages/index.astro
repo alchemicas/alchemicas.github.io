@@ -1,6 +1,8 @@
 ---
-import Jobs from '../components/Jobs.vue'
-import Me from '../components/Me.vue'
+import Jobs from '../blocks/Jobs.vue'
+import Me from '../blocks/Me.vue'
+import Education from '../blocks/Education.vue'
+import Skills from '../blocks/Skills.vue'
 ---
 
 <html lang='en'>
@@ -43,9 +45,11 @@ import Me from '../components/Me.vue'
     </style>
   </head>
   <body>
-    <div class='grid lg:grid-cols-2'>
+    <div class='grid lg:grid-cols-2 gap-32'>
       <Me client:load />
       <Jobs client:load />
+      <Education client:load />
+      <Skills client:load />
     </div>
   </body>
 </html>

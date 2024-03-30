@@ -6,6 +6,7 @@ import KEYLESS_LOGO from '../assets/companies/keyless.svg'
 import MODRON_LOGO from '../assets/companies/modron.svg'
 import TOGETHER_PRICE_LOGO from '../assets/companies/together-price.png'
 import TOKEDO_LOGO from '../assets/companies/tokedo.svg'
+import List from '../components/List.vue'
 
 const JOBS = [
   {
@@ -51,71 +52,52 @@ const JOBS = [
 ]
 </script>
 
-<style scoped>
-li.job {
-  &[data-company='datbrain'] {
-    aracna-avatar {
-      @apply p-1.5 bg-blue-950;
+<style>
+#jobs {
+  li {
+    &[data-id='datbrain'] {
+      aracna-avatar {
+        @apply p-1.5 bg-blue-950;
+      }
     }
-  }
 
-  &[data-company='modron'] {
-    aracna-avatar {
-      @apply p-1.5 bg-gray-800;
+    &[data-id='modron'] {
+      aracna-avatar {
+        @apply p-1.5 bg-gray-800;
+      }
     }
-  }
 
-  &[data-company='together-price'] {
-    aracna-avatar {
-      @apply p-1.5;
-      background: linear-gradient(151deg, #fc5c72, #e35e90 25%, #6564fd);
+    &[data-id='together-price'] {
+      aracna-avatar {
+        @apply p-1.5;
+        background: linear-gradient(151deg, #fc5c72, #e35e90 25%, #6564fd);
+      }
     }
-  }
 
-  &[data-company='tokedo'] {
-    aracna-avatar {
-      @apply p-1.5 bg-green-950;
+    &[data-id='tokedo'] {
+      aracna-avatar {
+        @apply p-2.5 bg-green-950;
+      }
     }
-  }
-
-  img.logo {
-    @apply w-full h-full object-contain;
-  }
-
-  span.company {
-    @apply mt-1;
-  }
-
-  span.history {
-    @apply text-sm mt-4;
-    @apply text-gray-500;
-  }
-
-  span.position {
-    @apply font-bold mt-2;
-  }
-
-  span.time {
-    @apply text-xs text-gray-500;
   }
 }
 </style>
 
 <template>
-  <div class="flex flex-col gap-8 mt-16">
+  <div class="flex flex-col gap-8 lg:mt-16">
     <h2>Work Experience</h2>
-    <ul class="flex flex-col gap-8">
-      <li v-for="job in JOBS" class="job flex justify-between" :data-company="job.id">
-        <div class="flex-1 flex flex-col items-start">
-          <span class="time">{{ job.time }}</span>
-          <span class="position">{{ job.position }}</span>
-          <span class="company">{{ job.company }}</span>
-          <span class="history">{{ job.history }}</span>
-        </div>
-        <aracna-avatar shape="squircle" size="32">
-          <img class="logo" :src="job.logo.src" />
-        </aracna-avatar>
-      </li>
-    </ul>
+    <List
+      id="jobs"
+      :items="
+        JOBS.map((job) => ({
+          headline: job.position,
+          id: job.id,
+          image: job.logo,
+          subhead: job.company,
+          surhead: job.time,
+          text: job.history
+        }))
+      "
+    />
   </div>
 </template>

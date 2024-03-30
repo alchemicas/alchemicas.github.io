@@ -1,12 +1,12 @@
 <script setup>
 import '@aracna/web-components/elements/data/avatar-element'
 import '@aracna/web-components/elements/data/image-element'
-import portrait from '../assets/portrait-bw.jpg'
+import portrait from '../assets/portrait.jpg'
 </script>
 
 <style scoped>
 aracna-image {
-  @apply w-40 rounded-[32px];
+  @apply rounded-[32px];
   @apply ring-[3px] ring-offset-8 ring-black;
 }
 </style>
@@ -14,7 +14,7 @@ aracna-image {
 <template>
   <div class="flex flex-col gap-12">
     <h1>Hey,<br />I'm<br />Dario</h1>
-    <aracna-image :src="portrait.src" />
+    <aracna-image height="198" :src="portrait.src" width="160" />
     <div class="flex flex-col gap-2">
       <h2>Contacts</h2>
       <div class="flex flex-col">
