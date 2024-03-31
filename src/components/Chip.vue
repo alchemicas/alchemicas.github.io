@@ -1,6 +1,5 @@
 <script setup>
-import '@aracna/web-components/elements/data/icon-element'
-import '@aracna/web-components/elements/data/avatar-element'
+import { IconElement } from '@aracna/web-components/elements/data/icon-element'
 
 const { headline, text, trailingIcon } = defineProps(['headline', 'text', 'trailingIcon'])
 </script>

@@ -1,5 +1,4 @@
 <script setup>
-import '@aracna/web-components/elements/data/icon-element'
 import Chip from '../components/Chip.vue'
 import { ICON_MS_STAR_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/star'
 

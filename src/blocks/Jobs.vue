@@ -1,6 +1,4 @@
 <script setup>
-import '@aracna/web-components/elements/data/avatar-element'
-
 import DATBRAIN_LOGO from '../assets/companies/datbrain.png'
 import KEYLESS_LOGO from '../assets/companies/keyless.svg'
 import MODRON_LOGO from '../assets/companies/modron.svg'

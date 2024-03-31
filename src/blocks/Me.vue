@@ -1,7 +1,6 @@
 <script setup>
-import '@aracna/web-components/elements/data/avatar-element'
-import '@aracna/web-components/elements/data/image-element'
-import portrait from '../assets/portrait.jpg'
+import { ImageElement } from '@aracna/web-components/elements/data/image-element'
+import PORTRAIT from '../assets/portrait.jpg'
 </script>
 
 <style scoped>
@@ -14,7 +13,7 @@ aracna-image {
 <template>
   <div class="flex flex-col gap-12">
     <h1>Hey,<br />I'm<br />Dario</h1>
-    <aracna-image height="198" :src="portrait.src" width="160" />
+    <aracna-image height="198" :src="PORTRAIT.src" width="160" />
     <div class="flex flex-col gap-2">
       <h2>Contacts</h2>
       <div class="flex flex-col">

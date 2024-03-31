@@ -1,7 +1,6 @@
 <script setup>
-import '@aracna/web-components/elements/data/avatar-element'
-import '@aracna/web-components/elements/data/image-element'
-import '@aracna/web-components/elements/data/icon-element'
+import { AvatarElement } from '@aracna/web-components/elements/data/avatar-element'
+import { IconElement } from '@aracna/web-components/elements/data/icon-element'
 
 const { items } = defineProps(['items'])
 </script>
