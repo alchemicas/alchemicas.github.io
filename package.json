@@ -1,14 +1,4 @@
 {
-  "name": "alchemicas.github.io",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
   "dependencies": {
     "@aracna/core": "^1.1.81",
     "@aracna/icons-material-symbols-rounded-os24-fill": "^1.0.6",
@@ -25,5 +15,16 @@
     "tailwindcss": "^3.4.2",
     "typescript": "^5.4.3",
     "vue": "^3.4.21"
-  }
+  },
+  "name": "alchemicas.github.io",
+  "packageManager": "pnpm@8.15.5",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "type": "module",
+  "version": "0.0.1"
 }
