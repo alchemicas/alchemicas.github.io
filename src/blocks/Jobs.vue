@@ -9,7 +9,7 @@ import List from '../components/List.vue'
 const JOBS = [
   {
     company: 'Keyless Technologies',
-    history: `Working for Keyless has been for sure the most enjoyable working experience I've had so far. Working for a cybersecurity company gives a lot of opportunities to work with more niche technologies and APIs.`,
+    history: `Keyless has been for sure the most enjoyable working experience I've had so far. Working for a cybersecurity company gives a lot of opportunities to work with more niche technologies and APIs.`,
     id: 'keyless',
     logo: KEYLESS_LOGO,
     position: 'Front End Lead',
@@ -25,7 +25,7 @@ const JOBS = [
   },
   {
     company: 'Modron',
-    history: `Modron was a passion project that I came up with and tried to lead to success with some friends. It was a learning experience in terms of leadership and project management, but also in terms of development since I was the only developer.`,
+    history: `Modron was a passion project that I came up with and tried to lead to success with some friends. It was a learning experience in terms of leadership and project management, but also in terms of engineering since I was the sole developer.`,
     id: 'modron',
     logo: MODRON_LOGO,
     position: 'Full Stack Developer',
@@ -33,7 +33,7 @@ const JOBS = [
   },
   {
     company: 'Together Price',
-    history: `Joining Together Price was extremely important for my career, being a quickly growing startup I had to push myself to the limits of what I was capable of accomplishing in terms of development.`,
+    history: `Joining Together Price was extremely important for my career, being a quickly growing startup I had to push myself to the limits of what I was capable of accomplishing in terms of development and choice making.`,
     id: 'together-price',
     logo: TOGETHER_PRICE_LOGO,
     position: 'Front End Developer',

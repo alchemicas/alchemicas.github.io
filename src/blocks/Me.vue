@@ -18,6 +18,7 @@ aracna-image {
       <h2>Contacts</h2>
       <div class="flex flex-col">
         <a class="text-sm underline" href="mailto:dario.sechi.rnd@gmail.com">dario.sechi.rnd@gmail.com</a>
+        <a class="text-sm underline" href="https://github.com/alchemicas">github.com/alchemicas</a>
         <a class="text-sm underline" href="https://www.linkedin.com/in/dario-sechi-790/">linkedin.com/in/dario-sechi-790</a>
       </div>
     </div>

@@ -29,14 +29,13 @@ const SKILLS = [
 </script>
 
 <template>
-  <div class="flex flex-col gap-8 mt-16">
+  <div class="lg:col-span-2 flex flex-col gap-8 mt-16">
     <h2>Skills</h2>
     <div class="flex flex-wrap gap-2">
       <Chip v-for="skill in SKILLS" :headline="skill.name" :trailing-icon="skill.star ? ICON_MS_STAR_W500 : undefined" />
     </div>
-    <span class="text-xs"
-      >The skills with the <aracna-icon fill="#facc15" size="12" :src="ICON_MS_STAR_W500" /> indicate that I have several years of experience and mastery over
-      the skill.</span
+    <span class="max-w-md text-xs"
+      >The <aracna-icon fill="#facc15" size="12" :src="ICON_MS_STAR_W500" /> indicates that I have several years of experience and mastery over the skill.</span
     >
   </div>
 </template>
