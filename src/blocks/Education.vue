@@ -1,9 +1,11 @@
 <script setup>
-import { ICON_MS_SCHOOL_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/school'
-import { ICON_MS_GLOBE_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/globe'
 import { ICON_MS_CODE_BLOCKS_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/code-blocks'
-import { IconElement } from '@aracna/web-components/elements/data/icon-element'
+import { ICON_MS_GLOBE_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/globe'
+import { ICON_MS_SCHOOL_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/school'
+import { AracnaIconElement } from '@aracna/web-components/elements/data/icon-element'
 import List from '../components/List.vue'
+
+const E = [AracnaIconElement]
 
 const EDUCATIONS = [
   {

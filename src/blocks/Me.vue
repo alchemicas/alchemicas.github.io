@@ -1,6 +1,8 @@
 <script setup>
-import { ImageElement } from '@aracna/web-components/elements/data/image-element'
+import { AracnaImageElement } from '@aracna/web-components/elements/data/image-element'
 import PORTRAIT from '../assets/portrait.jpg'
+
+const E = [AracnaImageElement]
 </script>
 
 <style scoped>
