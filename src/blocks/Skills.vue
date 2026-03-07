@@ -5,7 +5,7 @@ import Chip from '../components/Chip.vue'
 const SKILLS = [
   { name: 'Apache Cassandra', years: 1 },
   { name: 'Astro', years: 2 },
-  { name: 'CPP', years: 1 },
+  { name: 'C++', years: 1 },
   { name: 'CSS', star: true, years: 8 },
   { name: 'Emscripten', years: 1 },
   { name: 'Firebase', years: 6 },
