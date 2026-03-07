@@ -7,8 +7,10 @@ const { headline, text, trailingIcon } = defineProps(['headline', 'text', 'trail
 </script>
 
 <style scoped>
+@reference '../styles/global.css';
+
 div.chip {
-  @apply px-4 py-2 rounded-full;
+  @apply pl-3 pr-4 py-2 rounded-full;
   @apply bg-black;
 
   &[has-trailing-icon] {

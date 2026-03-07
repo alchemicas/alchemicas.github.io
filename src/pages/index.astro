@@ -1,9 +1,10 @@
 ---
+import Education from '../blocks/Education.vue'
 import Jobs from '../blocks/Jobs.vue'
 import Me from '../blocks/Me.vue'
-import Education from '../blocks/Education.vue'
-import Skills from '../blocks/Skills.vue'
 import Projects from '../blocks/Projects.vue'
+import Skills from '../blocks/Skills.vue'
+import '../styles/global.css'
 ---
 
 <html lang='en'>
@@ -13,49 +14,10 @@ import Projects from '../blocks/Projects.vue'
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
     <title>Dario Sechi's CV</title>
-    <style is:global>
-      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
-
-      body {
-        @apply max-w-screen-lg mx-auto p-8;
-      }
-
-      h1 {
-        font-family: 'Abril Fatface', serif;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 400;
-      }
-
-      h2 {
-        font-family: 'Lexend', sans-serif;
-        font-optical-sizing: auto;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 600;
-      }
-
-      a,
-      span {
-        font-family: 'Red Hat Mono', monospace;
-        font-optical-sizing: auto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-      }
-
-      aracna-avatar,
-      aracna-icon,
-      aracna-image {
-        opacity: 0;
-      }
-
-      aracna-avatar:defined,
-      aracna-icon:defined,
-      aracna-image:defined {
-        opacity: 1;
-      }
-    </style>
+    <link
+      rel='stylesheet'
+      href='https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap'
+    />
   </head>
   <body>
     <div class='grid lg:grid-cols-2 gap-32'>

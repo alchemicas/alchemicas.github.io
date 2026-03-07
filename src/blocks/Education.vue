@@ -1,7 +1,9 @@
 <script setup>
-import { ICON_MS_CODE_BLOCKS_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/code-blocks'
-import { ICON_MS_GLOBE_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/globe'
-import { ICON_MS_SCHOOL_W500 } from '@aracna/icons-material-symbols-rounded-os24-fill/assets/school'
+import {
+  ICON_MS_CODE_BLOCKS_FILL_S24_W500,
+  ICON_MS_GLOBE_FILL_S24_W500,
+  ICON_MS_SCHOOL_FILL_S24_W500
+} from '@aracna-icons/material-symbols-rounded-fill-s24-w500'
 import { AracnaIconElement } from '@aracna/web-components/elements/data/icon-element'
 import List from '../components/List.vue'
 
@@ -9,7 +11,7 @@ const E = [AracnaIconElement]
 
 const EDUCATIONS = [
   {
-    icon: ICON_MS_CODE_BLOCKS_W500,
+    icon: ICON_MS_CODE_BLOCKS_FILL_S24_W500,
     id: 'born2code',
     qualification: 'Junior Front End Developer',
     school: 'Born2Code Academy',
@@ -17,7 +19,7 @@ const EDUCATIONS = [
     time: '2017'
   },
   {
-    icon: ICON_MS_GLOBE_W500,
+    icon: ICON_MS_GLOBE_FILL_S24_W500,
     id: 'english-b2-first',
     qualification: 'English B2 First Certificate',
     school: 'Cambridge English Language Assessment',
@@ -25,7 +27,7 @@ const EDUCATIONS = [
     time: '2016'
   },
   {
-    icon: ICON_MS_SCHOOL_W500,
+    icon: ICON_MS_SCHOOL_FILL_S24_W500,
     id: 'high-school',
     qualification: 'High School Diploma',
     school: 'Liceo Scientifico Europa Unita',

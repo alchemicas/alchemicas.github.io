@@ -8,6 +8,8 @@ const { headline, href, icon, id, image, subhead, surhead, text } = defineProps(
 </script>
 
 <style scoped>
+@reference '../styles/global.css';
+
 li {
   a {
     @apply flex justify-center items-center px-4 py-2 rounded-full mt-6;

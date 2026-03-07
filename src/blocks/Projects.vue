@@ -1,7 +1,7 @@
 <script setup>
-import List from '../components/List.vue'
-import ARACNA_LOGO from '../assets/projects/aracna.png'
 import MODRON_LOGO from '../assets/companies/modron.svg'
+import ARACNA_LOGO from '../assets/projects/aracna.png'
+import List from '../components/List.vue'
 
 const PROJECTS = [
   {
@@ -28,6 +28,8 @@ const PROJECTS = [
 </script>
 
 <style>
+@reference '../styles/global.css';
+
 #projects {
   li {
     &[data-id='modron'] {

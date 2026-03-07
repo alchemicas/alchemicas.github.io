@@ -6,8 +6,10 @@ const E = [AracnaImageElement]
 </script>
 
 <style scoped>
+@reference '../styles/global.css';
+
 aracna-image {
-  @apply rounded-[32px];
+  @apply rounded-4xl;
   @apply ring-[3px] ring-offset-8 ring-black;
 }
 </style>

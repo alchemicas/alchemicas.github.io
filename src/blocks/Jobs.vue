@@ -2,18 +2,27 @@
 import DATBRAIN_LOGO from '../assets/companies/datbrain.png'
 import KEYLESS_LOGO from '../assets/companies/keyless.svg'
 import MODRON_LOGO from '../assets/companies/modron.svg'
+import PING_LOGO from '../assets/companies/ping.svg'
 import TOGETHER_PRICE_LOGO from '../assets/companies/together-price.png'
 import TOKEDO_LOGO from '../assets/companies/tokedo.svg'
 import List from '../components/List.vue'
 
 const JOBS = [
   {
+    company: 'Ping Identity',
+    history: `My role in Ping Identity is a natural progression from my previous role in Keyless, since Ping Identity acquired Keyless at the end of 2025.`,
+    id: 'ping',
+    logo: PING_LOGO,
+    position: 'Recognize Front End Lead',
+    time: '2026 - Present'
+  },
+  {
     company: 'Keyless Technologies',
     history: `Keyless has been for sure the most enjoyable working experience I've had so far. Working for a cybersecurity company gives a lot of opportunities to work with more niche technologies and APIs.`,
     id: 'keyless',
     logo: KEYLESS_LOGO,
     position: 'Front End Lead',
-    time: '2021 - Present'
+    time: '2021 - 2025'
   },
   {
     company: 'Datbrain LTD',
@@ -51,6 +60,8 @@ const JOBS = [
 </script>
 
 <style>
+@reference '../styles/global.css';
+
 #jobs {
   li {
     &[data-id='datbrain'] {
@@ -62,6 +73,12 @@ const JOBS = [
     &[data-id='modron'] {
       aracna-avatar {
         @apply p-1.5 bg-gray-800;
+      }
+    }
+
+    &[data-id='ping'] {
+      aracna-avatar {
+        @apply p-1.5 bg-[#BC1F27];
       }
     }
 
